@@ -1,0 +1,100 @@
+/* celebrationCards.css */
+.cards-list-wrapper {
+  display: flex;
+  margin: 0 auto;
+  width: 70%;
+  height: 100%;
+}
+
+.card-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  list-style: none;
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  min-width: 200px;
+  width: 23%;
+  margin: 20px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.5s ease;
+  position: relative;
+  aspect-ratio: 1/1;
+}
+
+.card.active {
+  border-radius: 15px;
+  width: 35%;
+  aspect-ratio: auto;
+}
+
+.video-wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: opacity 0.3s ease;
+}
+
+.card-video {
+  display: block;
+  background-image: url("https://maxkoltugin.github.io/gift-for-aidar/gift.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.card.active .card-video {
+  opacity: 1;
+  object-fit: contain;
+}
+
+/* Убираем подсветку при клике */
+.card,
+.video-wrapper,
+.card-video {
+  -webkit-tap-highlight-color: transparent;
+  outline: none;
+}
+
+@media (max-width: 768px) {
+  .cards-list-wrapper {
+    width: 100%;
+  }
+
+  .card {
+    width: 40%;
+    margin: 10px;
+  }
+
+  .card.active {
+    width: 90%;
+  }
+}
+@media (max-width: 425px) {
+  .card-list {
+    display: flex;
+    flex-direction: column;
+  }
+  .card {
+    min-width: 220px;
+    width: 40%;
+    margin: 10px;
+  }
+}

@@ -1,0 +1,24 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  min-height: 60px;
+  background-color: #677c89;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.header-congratulation {
+  font-size: 34px;
+  font-family: Roboto;
+  font-weight: 700;
+}
+
+@media (max-width: 330px) {
+  .header-congratulation {
+    font-size: 28px;
+  }
+}
