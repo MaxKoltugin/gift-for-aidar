@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/gift-to-aidar/static/css/main.cd680a8e.css",
-    "main.js": "/gift-to-aidar/static/js/main.e3839499.js",
+    "main.js": "/gift-to-aidar/static/js/main.810f903c.js",
     "index.html": "/gift-to-aidar/index.html",
     "main.cd680a8e.css.map": "/gift-to-aidar/static/css/main.cd680a8e.css.map",
-    "main.e3839499.js.map": "/gift-to-aidar/static/js/main.e3839499.js.map"
+    "main.810f903c.js.map": "/gift-to-aidar/static/js/main.810f903c.js.map"
   },
   "entrypoints": [
     "static/css/main.cd680a8e.css",
-    "static/js/main.e3839499.js"
+    "static/js/main.810f903c.js"
   ]
 }
